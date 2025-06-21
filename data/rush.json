@@ -9,6 +9,12 @@
     "password": "",
     "records": [
         {
+            "user": "itzkat",
+            "link": "",
+            "percent": 78,
+            "hz": "CBF"
+        },
+        {
             "user": "MiRPacK19",
             "link": "",
             "percent": 71,
