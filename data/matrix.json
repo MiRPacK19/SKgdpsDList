@@ -1,0 +1,18 @@
+{
+    "id": 232,
+    "name": "matrix",
+    "author": "itzkat",
+    "creators": ["itzkat"],
+    "verifier": "MiRPacK19",
+    "verification": "https://www.youtube.com/watch?v=ISTl28wKSXc",
+    "percentToQualify": "59",
+    "password": "",
+    "records": [
+        {
+            "user": "danik947",
+            "link": "",
+            "percent": 100,
+            "hz": ""
+        }
+    ]
+}
