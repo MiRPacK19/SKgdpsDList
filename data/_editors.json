@@ -1,6 +1,11 @@
 [
     {
         "role": "owner",
+        "name": "kostenkoMT",
+        "link": "https://t.me/mrhpmr"
+    },
+    {
+        "role": "admin",
         "name": "MiRPacK19",
         "link": "https://t.me/mirpack19"
     }
