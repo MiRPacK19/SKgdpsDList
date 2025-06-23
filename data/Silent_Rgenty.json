@@ -1,0 +1,18 @@
+{
+    "id": "287",
+    "name": "Silent Rgenty",
+    "author": "Cyndaver",
+    "creators": ["Cyndaver"],
+    "verifier": "Cyndaver",
+    "verification": "https://www.youtube.com/watch?v=ISTl28wKSXc",
+    "percentToQualify": "63",
+    "password": "",
+    "records": [
+        {
+            "user": "MiRPacK19",
+            "link": "",
+            "percent": 100,
+            "hz": "CBF"
+        }
+    ]
+}
