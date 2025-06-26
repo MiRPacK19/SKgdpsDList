@@ -8,5 +8,23 @@
     "percentToQualify": 55,
     "password": "",
     "records": [
+        {
+            "user": "reyfer",
+            "link": "",
+            "percent": 100,
+            "hz": ""
+        },
+        {
+            "user": "Lituralgede",
+            "link": "",
+            "percent": 100,
+            "hz": ""
+        },
+        {
+            "user": "MiRPacK19",
+            "link": "",
+            "percent": 100,
+            "hz": "CBF"
+        },
     ]
 }
