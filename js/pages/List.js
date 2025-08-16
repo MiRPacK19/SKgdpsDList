@@ -39,11 +39,11 @@ export default {
             <div class="level-container">
                 <div class="level" v-if="level">
                     <h1>{{ level.name }}</h1>
-                    <LevelAuthors :author="level.author" :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
+                    <LevelAuthors :Выложил="level.author" :Креаторы="level.creators" :Верифер="level.verifier"></LevelAuthors>
                     <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
                     <ul class="stats">
                         <li>
-                            <div class="type-title-sm">Points when completed</div>
+                            <div class="type-title-sm">Очки при прохождении</div>
                             <p>{{ score(selected + 1, 100, level.percentToQualify) }}</p>
                         </li>
                         <li>
@@ -51,14 +51,14 @@ export default {
                             <p>{{ level.id }}</p>
                         </li>
                         <li>
-                            <div class="type-title-sm">Password</div>
-                            <p>{{ level.password || 'Free to Copy' }}</p>
+                            <div class="type-title-sm">Пароль</div>
+                            <p>{{ level.password || 'Без пароля' }}</p>
                         </li>
                     </ul>
-                    <h2>Records</h2>
-                    <p v-if="selected + 1 <= 75"><strong>{{ level.percentToQualify }}%</strong> or better to qualify</p>
-                    <p v-else-if="selected +1 <= 150"><strong>100%</strong> or better to qualify</p>
-                    <p v-else>This level does not accept new records.</p>
+                    <h2>Рекорды</h2>
+                    <p v-if="selected + 1 <= 75"><strong>{{ level.percentToQualify }}%</strong> или больше для принятия</p>
+                    <p v-else-if="selected +1 <= 150"><strong>100%</strong> или больше для принятия</p>
+                    <p v-else>Этот уровень не принимает новые рекорды.</p>
                     <table class="records">
                         <tr v-for="record in level.records" class="record">
                             <td class="percent">
@@ -86,10 +86,10 @@ export default {
                         <p class="error" v-for="error of errors">{{ error }}</p>
                     </div>
                     <div class="og">
-                        <p class="type-label-md">Website layout made by <a href="https://tsl.pages.dev/" target="_blank">TheShittyList</a></p>
+                        <p class="type-label-md">Основа сайта сделана <a href="https://tsl.pages.dev/" target="_blank">TheShittyList</a></p>
                     </div>
                     <template v-if="editors">
-                        <h3>List Editors</h3>
+                        <h3>Модераторы листа</h3>
                         <ol class="editors">
                             <li v-for="editor in editors">
                                 <img :src="\`/assets/\${roleIconMap[editor.role]}\${store.dark ? '-dark' : ''}.svg\`" :alt="editor.role">
@@ -98,30 +98,24 @@ export default {
                             </li>
                         </ol>
                     </template>
-                    <h3>Submission Requirements</h3>
+                    <h3>Требования к рекорду</h3>
                     <p>
-                        Achieved the record without using hacks (however, FPS bypass is allowed, up to 360fps)
+                        Прохождение без читов.
                     </p>
                     <p>
-                        Achieved the record on the level that is listed on the site - please check the level ID before you submit a record
+                        Рекорд на версии, которая указана в листе - проверьте ID перед тем, как играть.
                     </p>
                     <p>
-                        Have either source audio or clicks/taps in the video. Edited audio only does not count
+                    В видео рекорда должны быть клики/тапы.
                     </p>
                     <p>
-                        The recording must have a previous attempt and entire death animation shown before the completion, unless the completion is on the first attempt. Everyplay records are exempt from this
+                        Игрок должен коснуться конечной стены.
                     </p>
                     <p>
-                        The recording must also show the player hit the endwall, or the completion will be invalidated.
+                        Не используйте секрет веи.
                     </p>
                     <p>
-                        Do not use secret routes or bug routes
-                    </p>
-                    <p>
-                        Do not use easy modes, only a record of the unmodified level qualifies
-                    </p>
-                    <p>
-                        Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level
+                        Не облегчайте уровень.
                     </p>
                 </div>
             </div>
