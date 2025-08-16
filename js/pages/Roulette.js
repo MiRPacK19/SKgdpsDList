@@ -17,14 +17,14 @@ export default {
                 </p>
                 <form class="options">
                     <div class="check">
-                        <input type="checkbox" id="main" value="Основной лист (1-75)" v-model="useMainList">
-                        <label for="main">Main List</label>
+                        <input type="checkbox" id="main" value="Main List" v-model="useMainList">
+                        <label for="main">Основной лист (1-75)</label>
                     </div>
                     <div class="check">
                         <input type="checkbox" id="extended" value="Продленный лист (76-150)" v-model="useExtendedList">
-                        <label for="extended">Extended List</label>
+                        <label for="extended">Увеличенный лист (76-150)</label>
                     </div>
-                    <Btn @click.native.prevent="onStart">{{ levels.length === 0 ? 'Start' : 'Restart'}}</Btn>
+                    <Btn @click.native.prevent="onStart">{{ levels.length === 0 ? 'Начать' : 'Начать снова'}}</Btn>
                 </form>
                 <p class="type-label-md" style="color: #aaa">
                     Рулетка сохраняется автоматически.
