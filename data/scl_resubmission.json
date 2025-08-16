@@ -3,16 +3,10 @@
     "name": "scl resubmission",
     "author": "MiRPacK19",
     "creators": ["MiRPacK19"],
-    "verifier": "reyfer",
+    "verifier": "MiRPacK19",
     "verification": "https://youtu.be/VCJbjnS4xAM?si=AliZKM40yirytELy",
     "percentToQualify": 58,
     "password": "",
     "records": [
-        {
-            "user": "MiRPacK19",
-            "link": "",
-            "percent": 100,
-            "hz": "CBF"
-        }
     ]
 }
