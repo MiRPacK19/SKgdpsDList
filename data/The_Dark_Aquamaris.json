@@ -9,6 +9,12 @@
     "password": "",
     "records": [
         {
+            "user": "amaterasu",
+            "link": "",
+            "percent": 100,
+            "hz": "CBF"
+        },
+        {
             "user": "Cyndaver",
             "link": "",
             "percent": 93,
